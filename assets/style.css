@@ -61,6 +61,9 @@ a {
 .line-clamp.line-4 {
     --line-clamp: 4;
 }
+.line-clamp.line-5 {
+    --line-clamp: 5;
+}
 
 /* ===========Header=========== */
 .header {
@@ -353,7 +356,7 @@ a {
     box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
 .services__item:hover .services__item--thumb {
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: 0.5s;
 }
 .services__item figure {
@@ -369,9 +372,183 @@ a {
     line-height: 1;
     margin-bottom: 18px;
 }
+.services__name:hover {
+    text-decoration: underline;
+    transition: 0.5;
+}
 .services__item--desc {
     width: 73%;
     font-family: var(--sub-font);
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+/* ===========Introduce=========== */
+.introduce {
+    margin-bottom: 79px;
+}
+.introduce__box {
+    display: flex;
+    justify-content: space-between;
+}
+.introduce__images {
+    position: relative;
+    width: 52%;
+}
+.introduce figure {
+    display: flex;
+    gap: 0 21px;
+}
+.introduce__img {
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+.introduce__img:first-child {
+    margin-top: 78px;
+}
+.introduce__img:last-child {
+    margin-top: 13px;
+}
+.introduce__images--decor {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: rotate(10deg);
+}
+.introduce__tab--text {
+    padding: 19px 22px 3px;
+}
+.introduce__tab {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    width: 144px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+.introduce__tab--title {
+    color: var(--primary-color-1st);
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.introduce__tab--sub-title,
+.introduce__tab--percent,
+.introduce__tab--status,
+.introduce__tab--desc {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.introduce__tab--sub-title {
+    margin: 6px 0 10px;
+    color: #575d5e;
+    font-weight: 400;
+}
+.introduce__tab--percent {
+    position: relative;
+    color: var(--primary-color-1st);
+    font-weight: 500;
+}
+.introduce__tab--percent::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+    bottom: -3px;
+    left: 0;
+}
+.introduce__tab--line {
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+.introduce__tab--status {
+    margin-top: 3px;
+    text-align: right;
+    color: var(--primary-color-1st);
+    font-weight: 500;
+}
+.introduce__tab--dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11px;
+    height: 11px;
+    margin-left: 19px;
+    background: #eaeaea;
+    border-radius: 50%;
+}
+.introduce__tab--icon {
+    border-radius: 50%;
+}
+.introduce__tab--member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 17px;
+}
+.introduce__tab--desc {
+    color: var(--primary-color-1st);
+    font-weight: 500;
+}
+.introduce__team--avt {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.introduce__team--avt:not(.introduce__team--avt:first-child) {
+    margin-left: -6px;
+}
+.introduce__text-block {
+    width: 43%;
+}
+.introduce__title {
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+    font-family: var(--sub-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+.introduce__title::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background: var(--primary-color-1st);
+    margin-right: 21px;
+}
+.introduce__sub-title {
+    margin-bottom: 11px;
+}
+.introduce__analysis-text--desc {
+    font-family: var(--sub-font);
+    font-size: 1.6rem;
+    line-height: 1.62;
+}
+.introduce__analysis-text {
+    display: flex;
+    margin-top: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+}
+.introduce__analysis-text strong {
+    margin-right: 24px;
+}
+.introduce__analysis-text--desc {
     font-size: 1.4rem;
     line-height: 1.71;
 }
