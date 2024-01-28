@@ -881,11 +881,20 @@ a {
     font-weight: 500;
 }
 .footer-form {
+    position: relative;
+}
+.footer-form__group {
     display: flex;
     align-items: center;
     width: 82%;
     padding-bottom: 20px;
     border-bottom: 1px solid #6a8383;
+}
+.footer-form:has(:invalid) .footer__form-group--error {
+    display: block;
+}
+.footer-form:has(#email:placeholder-shown) .footer__form-group--error {
+    display: none;
 }
 #email {
     background: transparent;
@@ -907,6 +916,13 @@ a {
 .footer-form__btn {
     background: none;
     border: none;
+}
+.footer__form-group--error {
+    position: absolute;
+    color: red;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    display: none;
 }
 .socials {
     display: flex;

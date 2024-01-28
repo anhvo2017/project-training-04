@@ -787,23 +787,29 @@
                 <div class="container">
                     <section class="footer__content">
                         <section class="footer__cta-block">
-                            <h2 class="footer__cta-block--title">
+                            <h2 class="footer__cta-block--title" for="email">
                                 Sign up for our newsletter
                             </h2>
                             <form action="" class="footer-form">
-                                <input
-                                    type="email"
-                                    name="input"
-                                    id="email"
-                                    placeholder="Enter your email"
-                                />
-                                <button class="footer-form__btn">
-                                    <img
-                                        src="./assets/images/arrow_footer.svg"
-                                        alt=""
-                                        class="footer-form__icon"
+                                <div class="footer-form__group">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Enter your email"
+                                        required
                                     />
-                                </button>
+                                    <button class="footer-form__btn">
+                                        <img
+                                            src="./assets/images/arrow_footer.svg"
+                                            alt=""
+                                            class="footer-form__icon"
+                                        />
+                                    </button>
+                                </div>
+                                <p class="footer__form-group--error">
+                                    Vui lòng nhập đúng email!
+                                </p>
                             </form>
                             <div class="socials">
                                 <a href="#!" class="socials-background">
