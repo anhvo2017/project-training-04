@@ -457,6 +457,9 @@
         width: 42px;
         margin-left: 16px;
     }
+    .btn {
+        font-size: 1.4rem;
+    }
     /* Navigation */
     .header__cta {
         margin-right: 50px;
