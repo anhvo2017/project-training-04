@@ -848,6 +848,7 @@ a {
     font-weight: 600;
     line-height: 1.66;
     height: 90px;
+    cursor: pointer;
 }
 .blog__list--line {
     width: 100%;
