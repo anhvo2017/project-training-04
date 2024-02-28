@@ -605,8 +605,8 @@
         gap: 40px;
     }
     .features__item {
-        width: 80vw;
-        padding: 40px 60px 90px;
+        width: 70vw;
+        padding: 26px 60px 50px;
         border-radius: 130px;
         border: 1.5px solid #cecece;
         transition: 0.5s;
