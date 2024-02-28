@@ -7,6 +7,7 @@
         <!-- -------Link Style------ -->
         <link rel="stylesheet" href="./assets/reset.css" />
         <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/responsive.css" />
 
         <!-- -------Favicon------ -->
         <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
@@ -100,6 +101,7 @@
                             alt=""
                             class="logo"
                     /></a>
+                    <!-- Navigation Desktop -->
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item active">
@@ -117,6 +119,12 @@
                         </ul>
                     </nav>
                     <a href="" class="header__cta btn">Sign Up</a>
+                    <!-- Navigation Tablet & Mobile -->
+                    <img
+                        src="./assets/images/nav-mobile.svg"
+                        alt=""
+                        class="nav-mobile-icon"
+                    />
                 </div>
                 <!-- -------Hero------ -->
                 <section class="hero">
@@ -138,6 +146,7 @@
                                 <div class="hero__video-play">
                                     <button class="hero__play-btn">
                                         <svg
+                                            class="hero__play-btn--icon"
                                             width="8"
                                             height="10"
                                             viewBox="0 0 8 10"
@@ -288,80 +297,117 @@
                             </button>
                         </div>
                     </section>
-
-                    <article class="services__box">
-                        <article class="services__item">
-                            <figure>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/images/service_1.jpg"
-                                        alt="Branding"
-                                        class="services__item--thumb"
-                                    />
-                                </a>
-                            </figure>
-                            <section class="services__item--text-block">
-                                <a href="#!">
-                                    <h4 class="services__name title-style">
-                                        Branding
-                                    </h4>
-                                </a>
-                                <p
-                                    class="services__item--desc desc-style line-clamp line-4"
-                                >
-                                    Create beautiful Agency website with
-                                    Boluethat converts more visitors than any
-                                    website.
-                                </p>
-                            </section>
-                        </article>
-                        <article class="services__item">
-                            <figure>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/images/service_2.jpg"
-                                        alt="Web Design"
-                                        class="services__item--thumb"
-                                /></a>
-                            </figure>
-                            <section class="services__item--text-block">
-                                <a href="#!">
-                                    <h4 class="services__name title-style">
-                                        Web Design
-                                    </h4>
-                                </a>
-                                <p
-                                    class="services__item--desc desc-style line-clamp line-4"
-                                >
-                                    Create beautiful Agency website with
-                                    Boluethat converts more visitors than any
-                                    website.
-                                </p>
-                            </section>
-                        </article>
-                        <article class="services__item">
-                            <figure>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/images/service_3.jpg"
-                                        alt="Graphic Design"
-                                        class="services__item--thumb"
-                                /></a>
-                            </figure>
-                            <section class="services__item--text-block">
-                                <a href="#!">
-                                    <h4 class="services__name title-style">
-                                        Graphic Design
-                                    </h4>
-                                </a>
-                                <p
-                                    class="services__item--desc desc-style line-clamp line-4"
-                                >
-                                    Create beautiful Agency website with
-                                    Boluethat converts more visitors than any
-                                    website.
-                                </p>
-                            </section>
+                    <article class="services__group">
+                        <!-- Left -->
+                        <button class="services__mobile-control-btn left">
+                            <svg
+                                class="services__mobile-control-icon"
+                                width="6"
+                                height="10"
+                                viewBox="0 0 6 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 5.23529H1.11482M1.11482 5.23529L5 1M1.11482 5.23529L5 9"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <!-- Right -->
+                        <button class="services__mobile-control-btn right">
+                            <svg
+                                class="services__mobile-control-icon"
+                                width="6"
+                                height="10"
+                                viewBox="0 0 6 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M5 5.23529H4.88518M4.88518 5.23529L1 1M4.88518 5.23529L1 9"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <article class="services__box">
+                            <article class="services__item">
+                                <figure>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/images/service_1.jpg"
+                                            alt="Branding"
+                                            class="services__item--thumb"
+                                        />
+                                    </a>
+                                </figure>
+                                <section class="services__item--text-block">
+                                    <a href="#!">
+                                        <h4 class="services__name title-style">
+                                            Branding
+                                        </h4>
+                                    </a>
+                                    <p
+                                        class="services__item--desc desc-style line-clamp line-4"
+                                    >
+                                        Create beautiful Agency website with
+                                        Boluethat converts more visitors than
+                                        any website.
+                                    </p>
+                                </section>
+                            </article>
+                            <article class="services__item">
+                                <figure>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/images/service_2.jpg"
+                                            alt="Web Design"
+                                            class="services__item--thumb"
+                                    /></a>
+                                </figure>
+                                <section class="services__item--text-block">
+                                    <a href="#!">
+                                        <h4 class="services__name title-style">
+                                            Web Design
+                                        </h4>
+                                    </a>
+                                    <p
+                                        class="services__item--desc desc-style line-clamp line-4"
+                                    >
+                                        Create beautiful Agency website with
+                                        Boluethat converts more visitors than
+                                        any website.
+                                    </p>
+                                </section>
+                            </article>
+                            <article class="services__item">
+                                <figure>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/images/service_3.jpg"
+                                            alt="Graphic Design"
+                                            class="services__item--thumb"
+                                    /></a>
+                                </figure>
+                                <section class="services__item--text-block">
+                                    <a href="#!">
+                                        <h4 class="services__name title-style">
+                                            Graphic Design
+                                        </h4>
+                                    </a>
+                                    <p
+                                        class="services__item--desc desc-style line-clamp line-4"
+                                    >
+                                        Create beautiful Agency website with
+                                        Boluethat converts more visitors than
+                                        any website.
+                                    </p>
+                                </section>
+                            </article>
                         </article>
                     </article>
                 </div>
@@ -493,7 +539,7 @@
                     <section class="process__heading">
                         <h2 class="process__title">OUR PROCESS</h2>
                         <h3 class="process__sub-title title-style line-clamp">
-                            A simple ,yet effective three step process span
+                            A simple ,yet effective three step process
                             <span class="process__sub-title--line"></span>
                         </h3>
                     </section>
@@ -625,7 +671,7 @@
                                 Share the features that help your customers
                             </h2>
                             <p
-                                class="features__desc desc-style line-clamp line-4"
+                                class="features__desc desc-style line-clamp line-5"
                             >
                                 You already know that the customer experience
                                 doesn't end with a sale — it's an ongoing work
