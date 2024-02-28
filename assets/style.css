@@ -914,6 +914,9 @@ a {
     background: none;
     border: none;
 }
+.footer-form__icon:hover {
+    cursor: pointer;
+}
 .footer__form-group--error {
     position: absolute;
     color: red;
